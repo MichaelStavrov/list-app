@@ -1,0 +1,41 @@
+.modal {
+  display: none;
+  pointer-events: none;
+}
+
+.isVisibleModal {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(5 42 96 / 40%);
+  transition: all 0.2s ease-in-out;
+  overflow: auto;
+  pointer-events: all;
+  z-index: 1000;
+}
+
+.modalWindow {
+  pointer-events: none;
+  transform: scale(0.5);
+  display: none;
+}
+
+.isVisibleModalWindow {
+  width: fit-content;
+  display: block;
+  pointer-events: all;
+  z-index: 1000;
+  transform: scale(1);
+  overflow: auto;
+  padding: 16px 32px;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+  border-radius: 20px;
+}
+
+

@@ -1,0 +1,14 @@
+@import '../../index.scss';
+
+.default{
+  @include button;
+}
+.danger{
+  @include button;
+  border: 1px solid red;
+  color: red;
+  
+  &:hover {
+    background-color: rgb(243, 211, 211);
+  }
+}
